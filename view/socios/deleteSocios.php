@@ -38,7 +38,7 @@
                 <label for="correoSocio" class="form-label">Correo</label>
                 <input type="password" class="form-control" id="correoSocio">
             </div>
-            <button type="submit" class="btn btn-primary">Eliminar</button>
+            <button type="submit" class="btn btn-danger">Eliminar</button>
             </form>
         </div>
     </div>
