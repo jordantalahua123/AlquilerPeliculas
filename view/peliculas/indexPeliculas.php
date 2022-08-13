@@ -17,7 +17,7 @@
             <div class="card">
                 <div class="card-header">
                     <b>Peliculas registradas</b>
-                    <a href="createSocios.php"><button type="button" class="btn btn-success"
+                    <a href="createPeliculas.php"><button type="button" class="btn btn-success"
                             style="margin-left:450px;">Agregar</button></a>
                 </div>
                 <table class="table table-hover align-middle">
@@ -38,19 +38,16 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                                <td><a href="updateSocios.php">Editar</a></td>
-                                <td><a href="viewSocios.php">Observar</a></td>
-                                <td><a href="deleteSocios.php">Eliminar</a></td>
-
+                                <td><a href="updatePeliculas.php">Editar</a></td>
+                                <td><a href="viewPeliculas.php">Observar</a></td>
+                                <td><a href="deletePeliculas.php">Eliminar</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-
-
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>
