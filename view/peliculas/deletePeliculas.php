@@ -23,7 +23,7 @@
             </div>
             <div class="mb-3">
                 <label for="nombreSocio" class="form-label">Nombre</label>
-                <input type="password" class="form-control" id="pel_nombre">
+                <input type="text" class="form-control" id="pel_nombre">
             </div>
             <div class="mb-3">
                 <label for="direccionSocio" class="form-label">Costo</label>
