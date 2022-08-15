@@ -16,23 +16,23 @@
                     <tbody>
                         <tr>
                             <th scope="row">Cédula</th>
-                            <td>171523256</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <th scope="row">Nombre</th>
-                            <td>Alba Rosa</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <th scope="row">Direccion</th>
-                            <td>Latacunga</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <th scope="row">Telefono</th>
-                            <td>096324612</td>
+                            <td></td>
                         </tr>
                         <tr>
                             <th scope="row">Correo</th>
-                            <td>RosaAlba@gmail.com</td>
+                            <td></td>
                         </tr>
                     </tbody>
                 </table>
