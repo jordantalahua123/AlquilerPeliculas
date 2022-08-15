@@ -17,7 +17,7 @@
             <div class="card">
                 <div class="card-header">
                     <b>Actores-Películas Registrados</b>
-                    <a href="createActorPelicula.php"><button type="button" class="btn btn-success"
+                    <a href="create.php"><button type="button" class="btn btn-success"
                             style="margin-left:650px;">Agregar</button></a>
                 </div>
                 <table class="table table-hover align-middle">
@@ -36,9 +36,9 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><button><a href="updateActorPelicula.php">Editar</a></button></td>
-                            <td><button><a href="viewActorPelicula.php">Observar</a></button></td>
-                            <td><button><a href="deleteActorPelicula.php">Eliminar</a></button></td>
+                            <td><button><a href="update.php">Editar</a></button></td>
+                            <td><button><a href="view.php">Observar</a></button></td>
+                            <td><button><a href="delete.php">Eliminar</a></button></td>
                         </tr>
                     </tbody>
                 </table>
