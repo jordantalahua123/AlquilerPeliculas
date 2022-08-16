@@ -36,9 +36,10 @@
                                 echo'<td>'.$row["alq_fecha_hasta"].'</td>';
                                 echo'<td>'.$row["alq_valor"].'</td>';
                                 echo'<td>'.$row["alq_fecha_entrega"].'</td>';
-                                echo'<td><button><a href="update.php">Editar</a></button></td>';
-                                echo'<td><button><a href="view.php">Observar</a></button></td>';
-                                echo'<td><button><a href="delete.php">Eliminar</a></button></td>';
+                                echo'
+                                <td><button><a href="update.php "><i class="fa fa-pen text-success"></i></a></button> 
+                                <button><a href="view.php"><i class="fa fa-eye text-primary"></i></a></button>
+                                <button><a href="delete.php"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
                                 echo '</tr>';
                             }
                             } else {
