@@ -26,13 +26,13 @@
                             while($row = $result->fetch_assoc()) {
                                 echo'<tr>';
                                 echo '<th scope="row">'.$row["apl_id"].'</th>';
-                                echo'<td>'.$row["act_id"].'</td>';
-                                echo'<td>'.$row["pel_id"].'</td>';
+                                echo'<td>'.$row["act_nombre"].'</td>';
+                                echo'<td>'.$row["pel_nombre"].'</td>';
                                 echo'<td>'.$row["apl_papel"].'</td>';
                                 echo'
-                                <td><button><a href="update.php "><i class="fa fa-pen text-success"></i></a></button> 
-                                <button><a href="view.php"><i class="fa fa-eye text-primary"></i></a></button>
-                                <button><a href="delete.php"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
+                                <td><button><a href="update.php?apl_id='.$row["apl_id"].'"><i class="fa fa-pen text-success"></i></a></button> 
+                                <button><a href="view.php?apl_id='.$row["apl_id"].'"><i class="fa fa-eye text-primary"></i></a></button>
+                                <button><a href="delete.php?apl_id='.$row["apl_id"].'"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
                                 echo '</tr>';
                             }
                             } else {
