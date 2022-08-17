@@ -30,9 +30,9 @@
                                 echo'<td>'.$row["soc_nombre"].'</td>';
                                 echo'<td>'.$row["soc_telefono"].'</td>';
                                 echo'
-                                <td><button><a href="update.php "><i class="fa fa-pen text-success"></i></a></button> 
-                                <button><a href="view.php"><i class="fa fa-eye text-primary"></i></a></button>
-                                <button><a href="delete.php"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
+                                <td><button><a href="update.php?soc_id='.$row["soc_id"].'"><i class="fa fa-pen text-success"></i></a></button> 
+                                <button><a href="view.php?soc_id='.$row["soc_id"].'"><i class="fa fa-eye text-primary"></i></a></button>
+                                <button><a href="delete.php?soc_id='.$row["soc_id"].'"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
                                 echo '</tr>';
                             }
                             } else {
