@@ -26,9 +26,9 @@
                                 echo '<th scope="row">'.$row["gen_id"].'</th>';
                                 echo'<td>'.$row["gen_nombre"].'</td>';
                                 echo'
-                                <td><button><a href="update.php "><i class="fa fa-pen text-success"></i></a></button> 
-                                <button><a href="view.php"><i class="fa fa-eye text-primary"></i></a></button>
-                                <button><a href="delete.php"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
+                                <td><button><a href="update.php?gen_id='.$row["gen_id"].'"><i class="fa fa-pen text-success"></i></a></button> 
+                                <button><a href="view.php?gen_id='.$row["gen_id"].'"><i class="fa fa-eye text-primary"></i></a></button>
+                                <button><a href="delete.php?gen_id='.$row["gen_id"].'"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
                                 echo '</tr>';
                             }
                             } else {

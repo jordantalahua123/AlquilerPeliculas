@@ -31,9 +31,9 @@
                                 echo'<td>'.$row["pel_costo"].'</td>';
                                 echo'<td>'.$row["pel_fecha_estreno"].'</td>';
                                 echo'
-                                <td><button><a href="update.php "><i class="fa fa-pen text-success"></i></a></button> 
-                                <button><a href="view.php"><i class="fa fa-eye text-primary"></i></a></button>
-                                <button><a href="delete.php"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
+                                <td><button><a href="update.php?pel_id='.$row["pel_id"].'"><i class="fa fa-pen text-success"></i></a></button> 
+                                <button><a href="view.php?pel_id='.$row["pel_id"].'"><i class="fa fa-eye text-primary"></i></a></button>
+                                <button><a href="delete.php?pel_id='.$row["pel_id"].'"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
                                 echo '</tr>';
                             }
                             } else {
