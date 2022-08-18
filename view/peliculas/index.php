@@ -26,7 +26,7 @@
                             while($row = $result->fetch_assoc()) {
                                 echo'<tr>';
                                 echo '<th scope="row">'.$row["pel_id"].'</th>';
-                                echo'<td>'.$row["gen_id"].'</td>';
+                                echo'<td>'.$row["gen_nombre"].'</td>';
                                 echo'<td>'.$row["pel_nombre"].'</td>';
                                 echo'<td>'.$row["pel_costo"].'</td>';
                                 echo'<td>'.$row["pel_fecha_estreno"].'</td>';
