@@ -1,8 +1,8 @@
 <?php  include '../template/header.php'?>
 <?php  include '../../controller/peliculas/index.php' ?>
 <div class="row">
-    <div class="col-3"></div>
-    <div class="col-6 mt-5">
+    <div class="col-1"></div>
+    <div class="col-8 mt-5">
         <div class="card">
             <div class="card-header">
                 <b>Peliculas registradas</b>

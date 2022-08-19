@@ -37,9 +37,9 @@
                                 echo'<td>'.$row["alq_valor"].'</td>';
                                 echo'<td>'.$row["alq_fecha_entrega"].'</td>';
                                 echo'
-                                <td><button><a href="update.php "><i class="fa fa-pen text-success"></i></a></button> 
-                                <button><a href="view.php"><i class="fa fa-eye text-primary"></i></a></button>
-                                <button><a href="delete.php"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
+                                <td><button><a href="update.php?alq_id='.$row["alq_id"].'"><i class="fa fa-pen text-success"></i></a></button> 
+                                <button><a href="view.php?alq_id='.$row["alq_id"].'"><i class="fa fa-eye text-primary"></i></a></button>
+                                <button><a href="delete.php?alq_id='.$row["alq_id"].'"><i class="fa fa-trash text-danger" aria-hidden="true"></i></a></button></td>';
                                 echo '</tr>';
                             }
                             } else {
