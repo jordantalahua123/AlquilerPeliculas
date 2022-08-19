@@ -7,14 +7,14 @@
                     <b>Registrar Género</b>
                 </div>
             </div>
-            <form>
+            <form action = "../../controller/generos/create.php" method ="POST">
             <div class="mb-3">
                 <label for="nombreSocio" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="gen_nombre">
+                <input type="text" class="form-control" id="gen_nombre" name ="gen_nombre" required>
                 <br>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary">Agregar</button>
             </form>
         </div>
     </div>
-    
+</div>
     <?php  include '../template/footer.php'?>
