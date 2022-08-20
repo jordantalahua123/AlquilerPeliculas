@@ -12,7 +12,7 @@
             <table class="table table-hover align-middle">
                 <thead>
                     <tr>
-                        <th scope="col">Ord</th>
+                        <th scope="col">N.</th>
                         <th scope="col">Genero</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Costo</th>
