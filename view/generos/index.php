@@ -6,7 +6,7 @@
             <div class="card">
                 <div class="card-header">
                     <b>Géneros registradas</b>
-                    <a href="createGeneros.php"><button type="button" class="btn btn-success"
+                    <a href="create.php"><button type="button" class="btn btn-success"
                             style="margin-left:450px;">Agregar</button></a>
                 </div>
                 <table class="table table-hover align-middle">
@@ -18,7 +18,6 @@
                         </tr>
                     </thead>
                     <tbody>
-
                     <?php
                             if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()) {
