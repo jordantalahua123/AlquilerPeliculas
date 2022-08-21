@@ -4,7 +4,6 @@
     $sql = "SELECT * FROM generos ORDER BY gen_nombre;";
     $result = $conn->query($sql);
     include '../../model/desconectar.php';
-
     if(isset($_POST['pel_nombre']) && isset($_POST['gen_id'])&& isset($_POST['pel_costo'])&& isset($_POST['pel_fecha_estreno'])){
         include '../../model/conectar.php';
         $pel_id = 0;
