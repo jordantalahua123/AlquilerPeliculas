@@ -38,8 +38,10 @@
                     value="<?php echo $row['pel_fecha_estreno']?>">
 
             </div>
-            <input type="hidden" name="pel_id" value="<?php echo $row['pel_id']?>">
-            <input type="submit" class="btn btn-danger" value="Eliminar"></input>
+            <form action="../../controller/peliculas/delete.php" method="post">
+            <input type="hidden" name="pel_id" value="<?php echo $row['pel_id'];?>">
+            <input type="submit" value="Eliminar" class="btn btn-danger">
+        </form>
         </form>
     </div>
 </div>
