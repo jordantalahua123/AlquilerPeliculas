@@ -1,5 +1,5 @@
 <?php  include '../template/header.php'?>
-<?php  include '../../controller/actores/view.php'?>
+<?php  include '../../controller/socios/view.php'?>
     <!-- Main content -->
     <section class="content">
     <div class="row">
