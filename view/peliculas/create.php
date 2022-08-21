@@ -1,4 +1,5 @@
 <?php  include '../template/header.php'?>
+<?php  include '../../controller/peliculas/create.php'?>
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6 mt-5">
@@ -7,10 +8,19 @@
                     <b>Registrar Pelicula</b>
                 </div>
             </div>
-            <form>
+            <form action='../../controller/peliculas/create.php' method="post">
             <div class="mb-3 mt-3">
                 <label for="cedulaSocio" class="form-label">ID Género</label>
+                <select name="gen_id" id="gen_id">
+                    <?php
+                        while($row = $result->fecth_assoc())
+                        {
+                            echo '<option value="'.$row['gen_id'].'">'.$row['gen_nombre'].'</option>';
+                        }
+                    ?>
+                </select>
                 <input type="number" class="form-control" id="gen_id" aria-describedby="emailHelp">
+            
             </div>
             <div class="mb-3">
                 <label for="nombreSocio" class="form-label">Nombre</label>
