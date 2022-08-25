@@ -1,4 +1,5 @@
 <?php  include '../template/header.php'?>
+<?php include '../../controller/alquileres/update.php'?>
     <!-- Main content -->
     <section class="content">
     <div class="row">
@@ -9,46 +10,48 @@
                     <b>Actualizar Alquileres</b>
                 </div>
             </div>
-            <form>
-                <div>
-                    <label for="SocioId" class="form-label mb-3 mt-3">Socio ID</label>
-                    <select class="form-select" aria-label="Default select example" id="SocioId">
-                        <option selected>Seleccione</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                    <div id="emailHelp" class="form-text">No compartiremos sus datos personales con nadie.</div>
+            <form action='../../controller/alquileres/create.php' method="POST" >
+                <div class="mb-3 mt-3">
+                        <label for="soc_id" class="form-label">Nombre Socio</label>
+                        <select name="soc_id" id="soc_id" required class="form-control">
+                            <?php
+                                while($row = $result_soc->fetch_assoc())
+                                {
+                                    echo '<option name="soc_id" value="'.$row['soc_id'].'">'.$row['soc_nombre'].'</option>';
+                                }
+                            ?>
+                        </select>
+                        <div id="emailHelp" class="form-text">No compartiremos sus datos personales con nadie.</div>
                 </div>
-                <div>
-                    <label for="PeliculaId" class="form-label mb-3 mt-3">Pelicula ID</label>
-                    <select class="form-select mb-3" aria-label="Default select example" id="PeliculaId">
-                        <option selected>Seleccione</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="FechaInicio" class="form-label mb-3 mt-3">Fecha de Inicio del Alquiler</label>
-                    <br>
-                    <input type="date" id="FechaInicio" value="2022-01-12">
-                </div>
-                <div class="mb-3">
-                    <label for="FechaFin" class="form-label mb-3 mt-3">Fecha Final del Alquiler</label>
-                    <br>
-                    <input type="date" id="FechaFin" value="2022-01-12">
+                <div class="mb-3 mt-3">
+                        <label for="pel_id" class="form-label">Nombre Pelicula</label>
+                        <select name="pel_id" id="pel_id" required class="form-control">
+                            <?php
+                                while($row = $result_pel->fetch_assoc())
+                                {
+                                    echo '<option name="pel_id" value="'.$row['pel_id'].'">'.$row['pel_nombre'].'</option>';
+                                }
+                            ?>
+                        </select>
+                        <div id="emailHelp" class="form-text">No compartiremos sus datos personales con nadie.</div>
                 </div>
                 <div class="mb-3">
-                    <label for="valorPagar" class="form-label">Valor a Pagar</label>
-                    <input type="number" class="form-control" id="valorPagar">
+                    <label for="alq_fecha_desde" class="form-label">Fecha de Inicio del Alquiler</label>
+                    <input type="date" class="form-control" id="alq_fecha_desde" name="alq_fecha_desde" required>
                 </div>
-                <div class="mb-3">
-                    <label for="FechaEntrega" class="form-label mb-3 mt-3">Fecha de Entrega del Alquiler</label>
-                    <br>
-                    <input type="date" id="FechaEntrega" value="2022-01-12">
+                    <div class="mb-3">
+                    <label for="alq_fecha_hasta" class="form-label">Fecha Final del Alquiler</label>
+                    <input type="date" class="form-control" id="alq_fecha_hasta" name="alq_fecha_hasta" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Actualizar</button>
+                    <div class="mb-3">
+                        <label for="alq_valor" class="form-label">Valor a Pagar</label>
+                        <input type="number" class="form-control" id="alq_valor" name="alq_valor">
+                    </div>
+                    <div class="mb-3">
+                    <label for="alq_fecha_entrega" class="form-label">Fecha de Entrega del Alquiler</label>
+                    <input type="date" class="form-control" id="alq_fecha_entrega" name="alq_fecha_entrega" required>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
             </form>
         </div>
     </div>

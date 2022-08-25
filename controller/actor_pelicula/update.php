@@ -1,11 +1,11 @@
 <?php
     include '../../model/conectar.php';
-    $sql = "SELECT * FROM actores ORDER BY act_nombre;";
+    $sql = "SELECT act_nombre FROM actores;";
     $result_act = $conn->query($sql);
     include '../../model/desconectar.php';
 
     include '../../model/conectar.php';
-    $sql = "SELECT * FROM peliculas ORDER BY pel_nombre;";
+    $sql = "SELECT * FROM peliculas;";
     $result_pel = $conn->query($sql);
     include '../../model/desconectar.php';
 
@@ -26,11 +26,10 @@
         $act_id = $_POST['act_id'];
         $pel_id = $_POST['pel_id'];
         $apl_papel = $_POST['apl_papel'];
-        
         $sql = "UPDATE actor_peliculas SET act_id = '".$act_id."', pel_id = '".$pel_id."', apl_papel = '".$apl_papel."'
         WHERE apl_id = ".$apl_id;
         $result = $conn->query($sql);
         include '../../model/desconectar.php';
-        header('Location: ../../view/actores_peliculas/index.php');
+        header('Location: ../../view/actor_peliculas/index.php');
     }
 ?>

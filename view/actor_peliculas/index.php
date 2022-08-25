@@ -15,8 +15,8 @@
                     <thead>
                         <tr>
                             <th scope="col">Ord</th>
-                            <th scope="col">Actor ID</th>
-                            <th scope="col">Película ID</th>
+                            <th scope="col">Nombre Actor</th>
+                            <th scope="col">Nombre Película</th>
                             <th scope="col">Papel Actor</th>
                             <th scope="col" colspan="3" class="text-aling">Opciones</th>
                         </tr>

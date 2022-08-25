@@ -20,19 +20,19 @@
                         value="<?php echo $row['apl_id']?>">
                 </div>
                 <div class="mb-3">
-                        <label for="correoSocio" class="form-label">Actor</label>
-                        <input type="text" class="form-control" readonly id="correoSocio"
-                        value="<?php echo $row['act_nombre']?>">
+                        <label for="act_nombre" class="form-label">Actor</label>
+                        <input type="text" class="form-control" readonly id="act_nombre"
+                        value="<?php echo $row['act_nombre']?>" name="act_nombre">
                 </div>
                 <div class="mb-3">
-                    <label for="correoSocio" class="form-label">Pelicula</label>
-                    <input type="text" class="form-control" readonly id="correoSocio"
-                    value="<?php echo $row['pel_nombre']?>">
+                    <label for="pel_nombre" class="form-label">Pelicula</label>
+                    <input type="text" class="form-control" readonly id="pel_nombre"
+                    value="<?php echo $row['pel_nombre']?>"  name="pel_nombre">
                 </div>
                 <div class="mb-3">
-                    <label for="correoSocio" class="form-label">Papel Actor</label>
-                    <input type="text" class="form-control" readonly id="correoSocio"
-                    value="<?php echo $row['apl_papel']?>">
+                    <label for="apl_papel" class="form-label">Papel Actor</label>
+                    <input type="text" class="form-control" readonly id="apl_papel"
+                    value="<?php echo $row['apl_papel']?>" name="apl_papel">
                 </div>
                 <input type="hidden" name="apl_id" value="<?php echo $row['apl_id']?>">
                 <input type="submit" class="btn btn-danger" value="Eliminar"></input>

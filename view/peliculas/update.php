@@ -9,27 +9,28 @@
                     <b>Actualizar Pelicula</b>
                 </div>
             </div>
-
             <form action="../../controller/peliculas/update.php" method='POST' >
             <?php
                 $row = $result->fetch_assoc();
             ?>
-            <select class="form-select form-control" id="gen_id" name="gen_id" required>
-                    <option selected disabled value="">Género</option>
-                    <?php
-                    if ($result->num_rows > 0){
-                        while($row = $result->fetch_assoc()) {
-                            if($row1["gen_id"]==$row["gen_id"]){
-                                echo '<option selected disable name="gen_id" value="'.$row["gen_id"].'">'.$row["gen_nombre"].'</option>';
-                            }else{
-                                echo '<option name="gen_id" value="'.$row["gen_id"].'">'.$row["gen_nombre"].'</option>';
+            <div class="mb-3">
+                <label for="gen_id" class="form-label">Género</label>
+                <select class="form-select form-control" id="gen_id" name="gen_id" required>
+                        <option selected disabled value="">Género</option>
+                        <?php
+                        if ($result->num_rows > 0){
+                            while($row = $result->fetch_assoc()) {
+                                if($row1["gen_id"]==$row["gen_id"]){
+                                    echo '<option selected disable name="gen_id" value="'.$row["gen_id"].'">'.$row["gen_nombre"].'</option>';
+                                }else{
+                                    echo '<option name="gen_id" value="'.$row["gen_id"].'">'.$row["gen_nombre"].'</option>';
+                                }
+                                
                             }
-                            
                         }
-                    }
-                    ?>
-                    
+                        ?>  
                 </select>
+            </div>
             <div class="mb-3">
                 <label for="pel_nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control"
