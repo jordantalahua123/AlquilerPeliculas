@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-12 col-sm-6 col-md-4">
             <div class="info-box">
-                <span class="info-box-icon bg-info elevation-1"><i class="fas fa-film"></i></span>
+                <span class="info-box-icon bg-info elevation-1"><i class="fas fa-video"></i></span>
 
                 <div class="info-box-content">
                     <span class="info-box-text">Total Películas</span>
@@ -12,20 +12,12 @@
                         <?php echo $total_pel?>
                     </span>
                 </div>
-                <!-- /.info-box-content -->
             </div>
-            <!-- /.info-box -->
         </div>
-        <!-- /.col -->
-
-        <!-- /.col -->
-
-        <!-- fix for small devices only -->
         <div class="clearfix hidden-md-up"></div>
-
         <div class="col-12 col-sm-6 col-md-4">
             <div class="info-box mb-3">
-                <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
+                <span class="info-box-icon bg-success elevation-1"><i class="fas fa-cash-register"></i></span>
 
                 <div class="info-box-content">
                     <span class="info-box-text">Total Alquileres</span>
@@ -33,43 +25,34 @@
                         <?php echo $total_alq ?>
                     </span>
                 </div>
-                <!-- /.info-box-content -->
             </div>
-            <!-- /.info-box -->
         </div>
-        <!-- /.col -->
         <div class="col-12 col-sm-6 col-md-4">
             <div class="info-box mb-3">
-                <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-users"></i></span>
-
+                <span class="info-box-icon bg-warning elevation-1"><i class="fas fa-user-circle"></i></span>
                 <div class="info-box-content">
                     <span class="info-box-text">Total socios</span>
                     <span class="info-box-number"><?php echo $total_soc ?></span>
                 </div>
-                <!-- /.info-box-content -->
             </div>
-            <!-- /.info-box -->
         </div>
-        <!-- /.col -->
     </div>
     <div class="row justify-content-center">
         <div class="col-lg-8 ">
             <div class="card ">
                 <div class="card-header border-0 ">
                     <div class="d-flex justify-content-center">
-                        <H3 class="card-title text-bold text-lg">ALQUILERES</H3>
+                        <H3 class="card-title text-bold text-lg">Ventas de alquileres</H3>
                     </div>
                 </div>
                 <div class="card-body">
                     <div class="d-flex ">
                         <p class="d-flex flex-column">
-                            <span class="text-bold text-lg ">Total: $<?php echo $total_alquileres?></span>
+                            <span class="text-bold text-lg ">Dinero obtenido: $<?php echo $total_alquileres?></span>
                         </p>
                     </div>
-                    <!-- /.d-flex -->
-
                     <div class="position-relative mb-4">
-                        <canvas id="sales-chart" height="200"></canvas>
+                        <canvas id="grafico-alquileres" height="100"></canvas>
                     </div>
                 </div>
             </div>
@@ -87,7 +70,12 @@ const data = {
         backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(54, 162, 235)',
-            'rgb(255, 205, 86)'
+            'rgb(255, 205, 86)',
+            'rgb(120, 165, 120)',
+            'rgb(160, 220, 200)',
+            'rgb(90, 110, 90)',
+            'rgb(145, 50, 200)'
+
         ],
         hoverOffset: 4
     }]
@@ -100,7 +88,7 @@ const config = {
 </script>
 <script>
 const myChart = new Chart(
-    document.getElementById('sales-chart'),
+    document.getElementById('grafico-alquileres'),
     config
 );
 </script>
