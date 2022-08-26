@@ -48,7 +48,7 @@
                 <div class="card-body">
                     <div class="d-flex ">
                         <p class="d-flex flex-column">
-                            <span class="text-bold text-lg ">Dinero obtenido: $<?php echo $total_alquileres?></span>
+                            <span class="text-bold text-lg ">Dinero Obtenido: $<?php echo $total_alquileres?></span>
                         </p>
                     </div>
                     <div class="position-relative mb-4">
@@ -82,7 +82,7 @@ const data = {
 };
 
 const config = {
-    type: 'doughnut',
+    type: 'bar',
     data: data,
 };
 </script>

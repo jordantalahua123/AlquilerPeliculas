@@ -23,5 +23,5 @@
         include '../../model/desconectar.php';
         header('Location: ../../view/actor_peliculas/index.php');
     }
-    
+
 ?>

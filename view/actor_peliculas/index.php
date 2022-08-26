@@ -6,7 +6,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="row align-items-center">
-                        <div class="col"><b>Actores-Películas Registrados</b></div>
+                        <div class="col"><b>ACTORES DE PELICULAS</b></div>
                         <div class="col"></div>
                         <div class="col"><a href="create.php"><button type="button" class="btn btn-success">Agregar</button></a></div>
                     </div>

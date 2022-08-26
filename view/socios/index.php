@@ -6,7 +6,7 @@
             <div class="card">
                 <div class="card-header">
                     <div class="row align-items-center">
-                        <div class="col"><b>Socios registrados</b></div>
+                        <div class="col"><b>SOCIOS REGISTRADOS</b></div>
                         <div class="col"></div>
                         <div class="col"><a href="create.php"><button type="button" class="btn btn-success">Agregar</button></a></div>
                     </div>
